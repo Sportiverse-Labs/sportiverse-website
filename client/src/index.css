@@ -1,32 +1,57 @@
+* {
+    box-sizing: border-box;
+  }
+
 html,
 body {
     color: #fff;
     text-align: center;
-    font-size: 20px;
     font-family: 'Inter', sans-serif;
     font-optical-sizing: auto;
+    font-size: clamp(0.7em, 1.3vw, 2.5rem);
     font-weight: 200;
     font-style: normal;
     height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden; /* evita scroll horizontal */
 }
 
 .Home {
-    background-image: url("./imgs/background.png");
     background-color: #1F1F1F;
     background-size: cover;
     min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    z-index: 2;
 }
-
+.container-video{
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.63); /* Filtro preto semi-transparente */
+    z-index: -1;
+  }
 .menu-container {
+    z-index: 1;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     flex-wrap: wrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
+    background-color: #d1cfcf4e;
 }
 
 .logo-container {
@@ -34,11 +59,15 @@ body {
     align-items: center;
     min-width: 120px;
     flex: 1;
+    z-index: 1;
+    position: relative;
 }
 
 .logo-container img {
     max-height: 50px;
     width: auto;
+    z-index: 1;
+    position: relative;
 }
 
 .logo-container2 {
@@ -48,6 +77,9 @@ body {
     gap: 1.5rem;
     flex: 2;
     flex-wrap: wrap;
+    z-index: 2;
+    position: relative;
+    
 }
 
 .profile-container {
@@ -56,17 +88,27 @@ body {
     justify-content: flex-end;
     flex: 1;
     min-width: 80px;
+    z-index: 1;
+    position: relative;
 }
 
 .no-effect {
     text-decoration: none;
     color: #fff;
     font-weight: 300;
+    z-index: 3;
+    padding: 2px;
 }
 
 .no-effect:hover {
     text-decoration: none;
     color: #aaa;
+}
+
+.actual {
+    z-index: 3;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    
 }
 
 @media screen and (max-width: 854px) {
@@ -85,13 +127,30 @@ body {
     }
 }
 
+/* VÍDEO DE FUNDO */
+
+
+  
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* funciona porque o container tem position: relative */
+  }
+  
+
 .content-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 85vh;
     text-align: center;
-    padding: 1rem;
+    padding: 2.5rem;
+    padding-bottom: 3.3rem;
+    position: relative
 }
 
 .text-content {
@@ -100,35 +159,44 @@ body {
     align-items: center;
     max-width: 800px;
     width: 100%;
+    z-index: 1;
 }
 
 .title {
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    z-index: 1;
 }
 
 .subtitle {
     font-size: 1.25rem;
     color: #C9C9C9;
     margin-bottom: 1.5rem;
+    z-index: 1;
 }
 
 .button-group {
     display: flex;
-    gap: 1rem;
+    gap: 1em;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 2;
 }
 
 .btn {
     padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    /* responsivo com limite mínimo/máximo */
     font-weight: bold;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s;
+    width: fit-content;
+    max-width: 100%;
+    text-align: center;
+    z-index: 2;
 }
 
 .btn.blue {
@@ -183,6 +251,10 @@ body {
         height: auto;
         padding: 2rem 1rem;
     }
+    .section-subtitle {
+        color: #C9C9C9;
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -201,36 +273,57 @@ body {
 }
 
 .faixa {
+    background-image: url('./imgs/faixa.png');
     width: 100%;
 }
 
+.section-general {
+    margin-top: 0rem;
+    background-image: url('./imgs/background-star.png');
+    background-size: cover;
+}
 .section-wrapper {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    display: flex;
 }
 
 .spacing-xl {
-    padding-top: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 4rem;
+}
+
+.spacing-xt {
+    padding-top: 8rem;
     padding-bottom: 6rem;
+    padding-right: 4rem;
 }
 
 .spacing-lg {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-right: 6rem;
 }
-
 .centered {
     text-align: center;
 }
-
+.section-design{
+    background-image: url('./imgs/background-design.png');
+    background-size: cover;
+    padding-bottom: 10rem;
+}
 .section {
     flex: 1;
-    min-width: 280px;
+    width: 100%;
 }
 
 .section-left {
     text-align: left;
     max-width: 700px;
+}
+
+.spacing-right {
+    padding-right: 6rem;
+    margin-bottom: 5rem;
 }
 
 .section-right,
@@ -250,18 +343,18 @@ body {
 
 .section-title2 {
     color: white;
-    font-size: 2.5rem;
-    max-width: 500px;
+    font-size: 2.5em;
+    max-width: 400px;
 }
 
 .section-title {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 
 .section-subtitle {
     color: #C9C9C9;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
@@ -272,6 +365,12 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .section-design{
+        background: black;
+    }
+    .section-general{
+        background-image: url('./imgs/background-star-phone.png');
+    }
     .section-wrapper {
         flex-direction: column;
         padding: 1.5rem;
@@ -300,6 +399,11 @@ body {
     .section-subtitle {
         font-size: 0.95rem;
     }
+    .spacing-right {
+        padding-right: 2rem;
+        margin-bottom: 1rem;
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -337,6 +441,7 @@ body {
     gap: 2rem;
     padding: 3rem 1rem;
     flex-wrap: wrap;
+    background-color: #000000;
 }
 
 .info-card {
@@ -352,13 +457,15 @@ body {
 
 .info-card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    border: white solid 1px;
 }
 
 .card-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
+
+    
 }
 
 .card-text {
@@ -372,7 +479,6 @@ body {
     background-color: #121212;
     color: #c9c9c9;
     font-size: 0.9rem;
-    margin-top: 2rem;
 }
 
 /* Responsividade */
