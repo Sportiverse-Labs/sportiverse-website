@@ -27,7 +27,7 @@ const Dapps = () => {
                         <div className="logo-container2">
                             <Link className="no-effect" to="/">Home</Link>
                             <Link className="no-effect" to="/docs">Docs</Link>
-                            <Link className="no-effect" to="/contacts">Contact</Link>
+                            <Link className="no-effect" to="/contact">Contact</Link>
                             <Link className="no-effect actual" to="/dapps">Dapps</Link>
                         </div>
                     </center>
@@ -37,9 +37,11 @@ const Dapps = () => {
                 <div class="content-container dap">
                     <div class="section-wrapper spacing-xpad">
                         <div class="section section-left">
-                            <h1 class="section-title dap">Blockchain that Scale</h1>
-                            <p class="subtitle dap">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <button class="btn blue dap">Learn about AppChains</button>
+                            <h1 class="section-title dap">Bring your blockchain to life with Cosmos SDK</h1>
+                            <p class="subtitle dap">Empower your sports application with a modular, scalable, and decentralized blockchain solution.</p>
+                            <a href="https://tutorials.cosmos.network/" className="no-effect">
+                                <button class="btn blue dap">Learn about AppChains</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -47,14 +49,17 @@ const Dapps = () => {
             <div class="content-container dap2">
                 <div class="text-content dap">
                     <h1 class="title dap">Exercise total control of your stack</h1>
-                    <p class="subtitle dap">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <div class="button-group">
-                        <button class="btn blue">Make a Transferer</button>
-                    </div>
+                    <p class="subtitle dap"> Deploy your custom blockchain with ease.
+                    No admins. No limits. Just pure decentralized power for sports.</p>
+                    <Link className="no-effect" to="/docs">
+                        <div class="button-group">
+                            <button class="btn blue">View more</button>
+                        </div>
+                    </Link>
                 </div>
             </div>
             <div class="content-container dap3">
-                <h1 class="title dap">Everythin a Blockchain needs, out of the box</h1>
+                <h1 class="title dap">Dapps Focused on Sports</h1>
                 <div className="card-section dap">
                     <div className="info-card dap">
                         <img src={avatar1} className="imagem-dap" />
@@ -79,49 +84,46 @@ const Dapps = () => {
                 </div>
             </div>
             <div class="content-container dap3 dap4">
-                <h1 class="title dap">Everythin a Blockchain needs, out of the box</h1>
+                <h1 class="title dap">Everything a Blockchain needs, out of the box</h1>
                 <div className="card-section dap">
                     <div className="info-card dap2">
-                        <h3 className="card-title dap">Security</h3>
-                        <p className="card-text dap">Robust cryptographic protocols to protect your data.</p>
+                        <h3 className="card-title dap">Organization</h3>
+                        <p className="card-text dap">Governance Module</p>
                     </div>
                     <div className="info-card dap2">
-                        <h3 className="card-title dap">Scalability</h3>
-                        <p className="card-text dap">Robust cryptographic protocols to protect your data.</p>
+                        <h3 className="card-title dap">Wealth</h3>
+                        <p className="card-text dap">Staking & Rewards</p>
                     </div>
                 </div>
                 <div className="card-section dap dap2">
                     <div className="info-card dap2">
-                        <h3 className="card-title dap">Security</h3>
-                        <p className="card-text dap">Robust cryptographic protocols to protect your data.</p>
+                        <h3 className="card-title dap">Connection</h3>
+                        <p className="card-text dap">IBC Integration</p>
                     </div>
                     <div className="info-card dap2">
-                        <h3 className="card-title dap">Scalability</h3>
-                        <p className="card-text dap">Robust cryptographic protocols to protect your data.</p>
+                        <h3 className="card-title dap">Infrastructure</h3>
+                        <p className="card-text dap">Custom Smart Contracts</p>
                     </div>
                 </div>
             </div>
             <div class="content-container dap3 dap5">
-                <h1 class="title dap">Everythin a Blockchain needs, out of the box</h1>
                 <div className="card-section dap">
-                    <div className="info-card dap3">
-                        <img src={card1} className="imagem-dap2" />
-                        <div className='card-subsection'>
-                            <div className='section-imageIcon'>
-                                <h3 className="card-title dap3">Scalability</h3>
-                                <p className="card-text dap3">Robust cryptographic protocols to protect your data.</p>
+                    <a href="https://www.instagram.com/millennium__football/?locale=%25buth2788%7DyL56d%C4%A3%3F%C2%B8%3F%3F%3F%3F%3F%3F%3FGkEiC&hl=en" className='no-effect'>
+                        <div className="info-card dap3">
+                            <img src={card1} className="imagem-dap2" />
+                            <div className='card-subsection'>
+                                <div className='section-imageIcon'>
+                                    <h3 className="card-title dap3">Learn More</h3>
+                                    <p className="card-text dap3">Millenium Sports & Partnerships</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="info-card dap3">
-                        <img src={card2} className="imagem-dap2" />
-                        <div className='section-imageIcon'>
-                            <h3 className="card-title dap3">Scalability</h3>
-                            <p className="card-text dap3">Robust cryptographic protocols to protect your data.</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
+            <footer className="footer">
+                <p>Created by Sportiverse Labs © {new Date().getFullYear()}</p>
+            </footer>
         </div>
     );
 };

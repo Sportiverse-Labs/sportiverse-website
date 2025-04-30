@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Dapps from './dapps';
 import Home from './Home';
-import Contatos from './Contact'
+import Contatos from './Contact';
+import Docs from './docs';
 
 class App extends Component {
     render() {
@@ -12,7 +13,8 @@ class App extends Component {
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/dapps" element={<Dapps/>}/>
-                        <Route path="/contacts" element={<Contatos/>}/>
+                        <Route path="/contact" element={<Contatos/>}/>
+                        <Route path="/docs" element={<Docs/>}/>
                     </Routes>
                 </div>
             </div>

@@ -35,8 +35,12 @@ const Home = () => {
                         <h1 class="title">Sportiverse is here!</h1>
                         <p class="subtitle">The blockchain infrastructure designed to revolutionize sports applications.</p>
                         <div class="button-group">
-                            <button class="btn blue">Explore</button>
-                            <button class="btn gray">Learn more</button>
+                            <Link className="no-effect" to="/dapps">
+                                <button class="btn blue">Explore</button>
+                            </Link>
+                            <Link className="no-effect" to="/docs">
+                                <button class="btn gray">Learn more</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -48,7 +52,9 @@ const Home = () => {
                         <h1 class="section-title">Why build with Sportiverse?</h1>
                         <p class="section-subtitle">Designed for real-world sports use cases. Powered by Cosmos SDK.
                         Efficient. Scalable. Admin-free.</p>
-                        <button class="btn blue">Learn about Sportiverse</button>
+                        <Link className="no-effect" to="/docs">
+                            <button class="btn blue">Learn about Sportiverse</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -57,7 +63,9 @@ const Home = () => {
                         <h1 class="section-title">Blockchain that scale</h1>
                         <p class="section-subtitle">Build sports-focused Dapps without limits.
                         Powered by Cosmos SDK for maximum performance and interoperability</p>
-                        <button class="btn blue">Learn about Dapps</button>
+                        <Link className="no-effect" to="/dapps">
+                            <button class="btn blue">Learn about Dapps</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -105,21 +113,27 @@ const Home = () => {
                 </div>
             </div>
             <div className="card-section">
-                <div className="info-card">
-                    <h3 className="card-title">Explore</h3>
-                    <p className="card-text">Build with full sovereignity and customize your chain.</p>
-                    <p className="card-text">Learn More +</p>
-                </div>
-                <div className="info-card">
-                    <h3 className="card-title">View</h3>
-                    <p className="card-text">Discover Dapps built on Sportiverse.</p>
-                    <p className="card-text">Learn More +</p>
-                </div>
-                <div className="info-card">
-                    <h3 className="card-title">Read</h3>
-                    <p className="card-text">Understand the architeture and start building.</p>
-                    <p className="card-text">Learn More +</p>
-                </div>
+                <Link className="no-effect" to="/docs">
+                    <div className="info-card">
+                        <h3 className="card-title">Explore</h3>
+                        <p className="card-text">Build with full sovereignity and customize your chain.</p>
+                        <p className="card-text">Learn More +</p>
+                    </div>
+                </Link>
+                <Link className="no-effect" to="/dapps">
+                    <div className="info-card">
+                        <h3 className="card-title">View</h3>
+                        <p className="card-text">Discover Dapps built on Sportiverse.</p>
+                            <p className="card-text">Learn More +</p>
+                    </div>
+                </Link>
+                <a className="no-effect" href="https://docs.cosmos.network/">
+                    <div className="info-card">
+                        <h3 className="card-title">Read</h3>
+                        <p className="card-text">Understand the architeture and start building.</p>
+                            <p className="card-text">Learn More +</p>
+                    </div>
+                </a>
             </div>
             <footer className="footer">
                 <p>Created by Sportiverse Labs © {new Date().getFullYear()}</p>
