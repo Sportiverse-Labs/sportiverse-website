@@ -34,13 +34,6 @@ const Contact = () => {
             linkedin: "https://www.linkedin.com/in/victor-garcia-dos-santos/"
         },
         {
-            name: "Luca Fortes",
-            role: "Product Manager",
-            img: luca,
-            github: "https://github.com/lucafortes7",
-            linkedin: "https://www.linkedin.com/in/lucafortes7/"
-        },
-        {
             name: "João Pedro",
             role: "FullStack Developer",
             img: joao,
