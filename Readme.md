@@ -2,15 +2,6 @@
 
 **Sportiverse** is a modern blockchain-powered site designed for sports-related web applications. This project uses React for the client-side and an Express server to serve static files. It emphasizes efficiency, scalability, and a decentralized user experience.
 
-## Overview
-
-- **Purpose:** Showcasing the Sportiverse platform for decentralized sports applications.
-- **Tech Stack:** React • Parcel • Express • Concepts inspired by Cosmos SDK.
-- **Features:** Real-time updates, responsive design, and intuitive navigation.
-
-## Litepaper
-For a deep dive into Sportiverse's architecture and vision, read our [Litepaper]( https://www.sportiverse.network/ ).
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -19,10 +10,17 @@ For a deep dive into Sportiverse's architecture and vision, read our [Litepaper]
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Development](#development)
 - [Team](#team)
-- [License](#license)
 - [Contact](#contact)
+
+## Overview
+
+- **Purpose:** Showcasing the Sportiverse platform for decentralized sports applications.
+- **Tech Stack:** React • Parcel • Express • Concepts inspired by Cosmos SDK.
+- **Features:** Real-time updates, responsive design, and intuitive navigation.
+
+## Litepaper
+For a deep dive into Sportiverse's architecture and vision, read our [Litepaper](https://www.sportiverse.network/docs).
 
 ## Features
 
@@ -63,7 +61,6 @@ For a deep dive into Sportiverse's architecture and vision, read our [Litepaper]
    npm install
    ````
 
-## Usage
 ### Development
 Run the project in development mode (with live reloading):
 
@@ -87,9 +84,10 @@ Access the application at http://localhost:1234.
 - **Hot Reload:** Nodemon watches for changes in server code for live updates.
 
 ## Team
-- **Daniel Augusto** - Business Analyst
-- **Pedro Jorge** - UI/UX Designer
-- **Victor Garcia** - Blockchain Engineer
+- [**Daniel Augusto**](https://github.com/odanielaugusto) — Business Analyst
+- [**Pedro Jorge**](https://github.com/PedroJorgeSA) — UI/UX Designer
+- [**Victor Garcia**](https://github.com/CryptoVictor) — Blockchain Engineer
+- [**João Pedro**](https://github.com/joaoaraujo2006) — FullStack Developer
 
 ##  Contact
 
