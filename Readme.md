@@ -20,7 +20,7 @@
 - **Features:** Real-time updates, responsive design, and intuitive navigation.
 
 ## Litepaper
-For a deep dive into Sportiverse's architecture and vision, read our [Litepaper](https://www.sportiverse.network/docs).
+For a deep dive into Sportiverse's architecture and vision, read our [Litepaper](https://www.sportiverse.network).
 
 ## Features
 
