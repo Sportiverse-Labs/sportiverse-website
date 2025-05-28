@@ -50,7 +50,7 @@ const Dapps = () => {
                 <div class="text-content dap">
                     <h1 class="title dap">Exercise total control of your stack</h1>
                     <p class="subtitle dap"> Deploy your custom blockchain with ease.
-                    No admins. No limits. Just pure decentralized power for sports.</p>
+                        No admins. No limits. Just pure decentralized power for sports.</p>
                     <Link className="no-effect" to="/docs">
                         <div class="button-group">
                             <button class="btn blue">View more</button>
@@ -80,6 +80,17 @@ const Dapps = () => {
                         <div className='section-imageIcon'>
                             <img src={icon1} className="imagem-icon" />
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container dap6">
+                <div class="section-wrapper spacing-xpad">
+                    <div class="section section-left">
+                        <h1 class="section-title dap">Your first social media on WEB3!</h1>
+                        <p class="subtitle dap">See another Players, receive bids, watch another matches and see the trendings.</p>
+                        <a href="https://tutorials.cosmos.network/" className="no-effect">
+                            <button class="btn blue">See the DAPP</button>
+                        </a>
                     </div>
                 </div>
             </div>

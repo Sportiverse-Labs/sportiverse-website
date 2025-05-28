@@ -611,6 +611,17 @@ body {
 .content-container.dap3.dap5 {
     background: #3D38FF;
 }
+.content-container.dap6 {
+     display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    padding: 2.5rem;
+    justify-content: center;
+    z-index: 2;
+    background-size: cover;
+    background-image: url('../src/imgs/background-dap5.png');
+}
 
 .text-content.dap {
     display: flex;
@@ -845,7 +856,11 @@ body {
         padding: 2rem 1rem;
         background: #050433;
     }
-
+    .content-container.dap6 {
+        height: auto;
+        padding: 2rem 1rem;
+        background: #000000;
+    }
     .spacing-xdap {
         padding: 0.4rem;
     }
