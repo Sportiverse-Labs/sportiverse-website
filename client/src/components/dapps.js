@@ -88,7 +88,7 @@ const Dapps = () => {
                     <div class="section section-left">
                         <h1 class="section-title dap">Your first social media on WEB3!</h1>
                         <p class="subtitle dap">See another Players, receive bids, watch another matches and see the trendings.</p>
-                        <a href="" className="no-effect">
+                        <a href="https://github.com/Sportiverse-Labs/goaltrick-dapp" className="no-effect">
                             <button class="btn blue">See the DAPP</button>
                         </a>
                     </div>
