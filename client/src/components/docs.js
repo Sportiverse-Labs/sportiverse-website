@@ -2,6 +2,8 @@ import React from 'react';
 import logo from '../imgs/logo.svg';
 import { Routes, Route, Link } from 'react-router-dom';
 import litepaper from '../imgs/litepaper.png';
+import goaltrick from '../imgs/GoalTrick_The_On-Chain_Social_Network_for_Football_Talent.pdf';
+import hackathon from '../imgs/Sportiverse_Network_(Cosmos_Hackathon_Development).pdf';
 import paper from '../docs/SportiverseHub.pdf';
 
 const Docs = () => {
@@ -26,6 +28,20 @@ const Docs = () => {
                 </div>
             </div>
             <div className="docs-container">
+                <a className="no-effect" href={hackathon}>
+                    <div className="docs-card">
+                        <img src={litepaper} alt="hackathon" className="docs-card-image" />
+                        <div className="docs-card-title">Cosmos Hackathon Development</div>
+                    </div>
+                </a>
+                <br/>
+                <a className="no-effect" href={goaltrick}>
+                    <div className="docs-card">
+                        <img src={litepaper} alt="goaltrick" className="docs-card-image" />
+                        <div className="docs-card-title">Goaltrick Dapp</div>
+                    </div>
+                </a>
+                <br/>
                 <a className="no-effect" href={paper}>
                     <div className="docs-card">
                         <img src={litepaper} alt="Litepaper" className="docs-card-image" />

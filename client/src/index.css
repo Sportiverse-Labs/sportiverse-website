@@ -1049,7 +1049,8 @@ body {
 
 .docs-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2vh;
     padding: 2rem;
     text-align: left;
     font-family: sans-serif;
