@@ -118,14 +118,15 @@ const Dapps = () => {
                 </div>
             </div>
             <div class="content-container dap3 dap5">
+                <h1 class="title dap">Showcases</h1>
                 <div className="card-section dap">
-                    <a href="https://www.instagram.com/millennium__football/?locale=%25buth2788%7DyL56d%C4%A3%3F%C2%B8%3F%3F%3F%3F%3F%3F%3FGkEiC&hl=en" className='no-effect'>
+                    <a href="https://github.com/Sportiverse-Labs/goaltrick-dapp" className='no-effect'>
                         <div className="info-card dap3">
                             <img src={card1} className="imagem-dap2" />
                             <div className='card-subsection'>
                                 <div className='section-imageIcon'>
-                                    <h3 className="card-title dap3">Learn More</h3>
-                                    <p className="card-text dap3">Millenium Sports & Partnerships</p>
+                                    <h3 className="card-title dap3">Goaltrick</h3>
+                                    <p className="card-text dap3">The On-Chain Social Network for Football Talent</p>
                                 </div>
                             </div>
                         </div>
